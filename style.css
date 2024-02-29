@@ -1,0 +1,52 @@
+*{
+    background-color: #BCCCDC;
+   
+}
+#img_edit{
+    width: 570px;
+    border-radius: 5px;
+}
+.giveaway_info{
+   margin: 20px;;
+}
+
+.container{
+    display:flex;
+    margin: 100px;
+    
+}
+.timer_header{
+    display:flex;
+    text-align: center;
+    position: relative;
+    bottom: 15px;
+    right: 4px;
+   
+}
+.header{
+    border: 2px solid #063251;
+    border-radius: 4px;
+    margin:5px;
+    width: 70px;
+    background-color: #063251;
+    height:80px;
+    
+    
+    
+}
+.header h1, .header h3{
+    background-color: #063251;
+    color: white;
+    position: relative;
+    bottom:15px;
+    
+}
+.header h3{
+    bottom:35px;
+}
+.creator{
+    position: relative;
+    left:800px;
+    bottom: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
