@@ -1,66 +1,111 @@
-/* Default styles */
-
+/* Reset & Base Styles */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #BCCCDC;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f4f8;
+  color: #222;
+  line-height: 1.6;
 }
 
+/* Container */
 .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
+/* Image */
 #img_edit {
-    width: 100%;
-    max-width: 570px;
-    height: auto;
-    border-radius: 5px;
-    margin-bottom: 20px;
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+/* Giveaway Info */
 .giveaway_info {
-    text-align: center;
-    margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
+.giveaway_info h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #063251;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.giveaway_info h3 {
+  font-size: 16px;
+  color: #34495e;
+}
+
+/* Countdown Timer */
 .timer_header {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .header {
-    border: 2px solid #063251;
-    border-radius: 4px;
-    padding: 5px;
-    width: 70px;
-    text-align: center;
-    background-color: #063251;
-    color: white;
+  flex: 1;
+  min-width: 70px;
+  max-width: 100px;
+  background-color: #063251;
+  border-radius: 8px;
+  color: #fff;
+  text-align: center;
+  padding: 15px 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
+.header h1 {
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.header h3 {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #d1dce5;
+}
+
+/* Creator Info */
 .creator {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 14px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  color: #555;
+  font-style: italic;
 }
 
-/* Responsive styles */
-@media only screen and (max-width: 768px) {
-    .container {
-        padding: 10px;
-    }
+/* Responsive */
+@media only screen and (max-width: 600px) {
+  .timer_header {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    #img_edit {
-        max-width: 100%;
-    }
+  .header {
+    width: 80%;
+  }
+
+  .giveaway_info h2 {
+    font-size: 24px;
+  }
+
+  .giveaway_info h3 {
+    font-size: 14px;
+  }
 }
